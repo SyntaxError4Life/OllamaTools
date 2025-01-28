@@ -47,7 +47,7 @@ Messages are structured in JSON and must follow a specific order to handle funct
 ### Available roles:
 - **`system`**: Global instructions for the model.
 - **`user`**: User message.
-- **`assistant`**: Model response or function call.
+- **`assistant`**: Model response **OR** function call.
 - **`tool`**: Tool response after execution.
 
 ---
@@ -208,7 +208,7 @@ messages = [
 
 # Initial call
 response = chat(
-    model="llama3.1", # Works with mistral
+    model="llama3.1", # Works with mistra (and is better)
     messages=messages,
     tools=tools
 )
@@ -225,7 +225,7 @@ if hasattr(response.message, 'tool_calls') and response.message.tool_calls:
     tool_response = {
         "role": "tool",
         "name": "get_current_time",
-        "content": f"{get_current_time()}"  # Fictional time
+        "content": f"{get_current_time()}"
     }
     messages.append(tool_response)
     
