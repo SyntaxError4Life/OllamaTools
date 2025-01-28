@@ -133,9 +133,3 @@ To solve these issues, it would be necessary to **modify the Ollama server** to:
 - Add finer management of tools in the streaming flow.
 
 Without these modifications, it is difficult to effectively use tools with Ollama in a fluid conversational context.
-
----
----
-
-### **Next Steps** 
-I will work on a **custom client** using **transformers** directly and compile the models to allow optimization similar to Ollama.
