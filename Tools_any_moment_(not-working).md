@@ -1,4 +1,4 @@
-### **Approaches Tested for Multi-Tool Usage with Ollama (with Streaming)**
+### **Approaches Tested for Multi-Tool Usage with Ollama 5.1 (with Streaming)**
 
 ---
 
@@ -133,3 +133,6 @@ To solve these issues, it would be necessary to **modify the Ollama server** to:
 - Add finer management of tools in the streaming flow.
 
 Without these modifications, it is difficult to effectively use tools with Ollama in a fluid conversational context.
+
+---
+---
